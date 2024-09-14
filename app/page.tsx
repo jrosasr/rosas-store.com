@@ -16,13 +16,7 @@ export default function Home() {
       />
       <main className="flex flex-col items-center gap-8 row-start-2">
         <div className="flex justify-center items-center gap-4">
-          <Image
-            src="/logo.webp"
-            alt="RosasStore Logo"
-            width={250}
-            height={38}
-            priority
-          />
+          <img src="/logo.webp" alt="RosasStore Logo" width={250} height={38} />
         </div>
         <div className="font-[family-name:var(--font-geist-mono)] text-center text-sm list-decimal list-inside">
           <span className="mb-2 text-lg">
