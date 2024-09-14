@@ -2,9 +2,18 @@ import Instagram from "@/components/Icons/Instagram";
 import WhatsApp from "@/components/Icons/Whatsapp";
 import Image from "next/image";
 
+import Particles from "@/components/magicui/particles";
+
 export default function Home() {
   return (
     <div className="justify-items-center items-center gap-16 grid grid-rows-[20px_1fr_20px] p-8 sm:p-20 pb-20 min-h-screen font-[family-name:var(--font-geist-sans)]">
+      <Particles
+        className="z-[-1] absolute inset-0"
+        quantity={100}
+        ease={80}
+        color="#000000"
+        refresh
+      />
       <main className="flex flex-col items-center gap-8 row-start-2">
         <div className="flex justify-center items-center gap-4">
           <Image
