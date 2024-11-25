@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import {NextUIProvider} from "@nextui-org/react";
+import RsNavbar from "@/components/Navbar/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +31,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-rose-100 to-teal-100`}
       >
-        {children}
+        <NextUIProvider>
+          <RsNavbar />
+          {children}
+        </NextUIProvider>
       </body>
     </html>
   );
