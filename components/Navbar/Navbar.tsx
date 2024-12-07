@@ -1,27 +1,25 @@
+import Image from "next/image";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
-// import {AcmeLogo} from "./AcmeLogo.jsx";
-import Image from "next/image";
-import WhatsApp from "../Icons/Whatsapp";
+} from "@nextui-org/navbar";
+import { Link } from "@nextui-org/link";
+import { WhatsApp } from "../icons";
 
-export default function RsNavbar() {
+export function RsNavbar() {
   return (
     <Navbar>
       <NavbarBrand>
         <Image
-          src="/logo.webp"
-          alt="RosasStore Logo"
-          width={90}
-          height={38}
           priority
+          alt="RosasStore Logo"
+          height={38}
+          src="/logo-name.png"
+          width={90}
         />
-        <p className="font-bold text-inherit"></p>
+        <p className="font-bold text-inherit"> </p>
       </NavbarBrand>
       {/* <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
@@ -45,10 +43,10 @@ export default function RsNavbar() {
           <Link
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://wa.me/584149796659"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
-            <WhatsApp width={16} height={16} />
+            <WhatsApp height={16} width={16} />
             Whatsapp
           </Link>
         </NavbarItem>
